@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LSIPerson.h"
 
 @interface ViewController ()
 
@@ -43,8 +44,28 @@
 		double sum = [self calculateSum:@[@3.14, @400, @-45, @1000.1]];
 		printf("sum: %f\n", sum);
 
+	// NSNumber *result = one * two;
 
 		// Mutabilty
+
+	// NSString = readonly "James"
+	// NSMutableString = readwrite "James" -> "Jim"
+
+	// NSArray, NSDictionary, NSSet
+
+	// let = constant
+	// let food = ["Tacos", "Apple"]
+	// var = variable
+
+	NSMutableString *james = [@"James" mutableCopy];
+	LSIPerson *actor = [[LSIPerson alloc] initWithName:james];
+
+	NSLog(@"Actor: %@", actor.name);
+	[james setString: @"Jim"];
+
+	NSLog(@"Actor: %@", actor.name);
+
+
 
 	}
 
