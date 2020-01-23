@@ -10,8 +10,29 @@
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
-	    // insert code here...
-	    NSLog(@"Hello, World!");
+
+		char letter = 't';
+		char nullChar = '\0'; // NULL "Mac\0"
+		printf("letter: %c\n", letter);  // print formatted
+		printf("letter: %c\n", nullChar);
+
+		int count = 2;
+		printf("count: %i\n", count);
+
+		// floating point numbers
+		float float_pi = 3.1459265359;
+		double pi = 3.1459265359;
+
+		printf("float_pi: %f\n", float_pi);
+		printf("pi: %f\n", pi);
+
+
+
+
 	}
 	return 0;
 }
+
+// git init
+//
+// 
